@@ -1,8 +1,8 @@
 <?php
 
-namespace Kingsley\Mentions\Collections;
+namespace VoTong\Mentions\Collections;
 
-use Kingsley\Mentions\Models\Mention;
+use VoTong\Mentions\Models\Mention;
 use Illuminate\Database\Eloquent\Collection;
 
 class MentionCollection extends Collection

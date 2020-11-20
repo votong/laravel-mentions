@@ -1,10 +1,10 @@
 <?php
 
-namespace Kingsley\Mentions\Test;
+namespace VoTong\Mentions\Test;
 
 use DB;
 use Illuminate\Database\Schema\Blueprint;
-use Kingsley\Mentions\Test\TestMiddleware;
+use VoTong\Mentions\Test\TestMiddleware;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Orchestra\Testbench\Traits as OrchestraTrait;
 
@@ -30,7 +30,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            'Kingsley\Mentions\MentionServiceProvider',
+            'VoTong\Mentions\MentionServiceProvider',
         ];
     }
 
@@ -49,11 +49,11 @@ abstract class TestCase extends Orchestra
             'middleware' => null,
             'pools' => [
                 'users' => [
-                    'model' => 'Kingsley\Mentions\Test\TestUserModel',
+                    'model' => 'VoTong\Mentions\Test\TestUserModel',
                     'resource' => null,
                     'filter' => null,
                     'column' => 'name',
-                    'notification' => 'Kingsley\Mentions\Test\TestNotifiedModel',
+                    'notification' => 'VoTong\Mentions\Test\TestNotifiedModel',
                     'auto_notify' => false
                 ]
             ]

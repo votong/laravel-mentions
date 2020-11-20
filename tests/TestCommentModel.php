@@ -1,9 +1,9 @@
 <?php
 
-namespace Kingsley\Mentions\Test;
+namespace VoTong\Mentions\Test;
 
 use Illuminate\Database\Eloquent\Model;
-use Kingsley\Mentions\Traits\HasMentions;
+use VoTong\Mentions\Traits\HasMentions;
 
 class TestCommentModel extends Model
 {

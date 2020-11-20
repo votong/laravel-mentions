@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingsley\Mentions\Test;
+namespace VoTong\Mentions\Test;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Database\Eloquent\Model;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingsley\Mentions;
+namespace VoTong\Mentions;
 
 use Illuminate\Support\ServiceProvider;
 

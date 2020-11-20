@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingsley\Mentions\Collections;
+namespace VoTong\Mentions\Collections;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace Kingsley\Mentions\Traits;
+namespace VoTong\Mentions\Traits;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Kingsley\Mentions\Collections\MentionCollection;
-use Kingsley\Mentions\Repositories\MentionRepository;
+use VoTong\Mentions\Collections\MentionCollection;
+use VoTong\Mentions\Repositories\MentionRepository;
 
 trait HasMentions
 {
     /**
      * Mention repository.
      *
-     * @return Kingsley\Mentions\Repositories\MentionRepository
+     * @return VoTong\Mentions\Repositories\MentionRepository
      */
     protected $mentionRepository;
 
@@ -31,7 +31,7 @@ trait HasMentions
     /**
      * Create a new mention for the given model(s).
      *
-     * @return Collection Kingsley\Mentions\Models\Mention
+     * @return Collection VoTong\Mentions\Models\Mention
      */
     public function mention($model, $notify = true)
     {

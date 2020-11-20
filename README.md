@@ -1,6 +1,6 @@
 # End-to-end Mentions in Laravel 5 & 6
 
-[![Build Status](https://travis-ci.org/jameslkingsley/laravel-mentions.svg?branch=master)](https://travis-ci.org/jameslkingsley/laravel-mentions)
+[![Build Status](https://travis-ci.org/votong/laravel-mentions.svg?branch=master)](https://travis-ci.org/votong/laravel-mentions)
 
 ## Abandoned
 Unfortunately, I don't have the time to adequately maintain this package. I recommend [Xetaravel-Mentions](https://github.com/XetaIO/Xetaravel-Mentions) which appears to be better maintained with similar functionality.
@@ -51,7 +51,7 @@ $mention->notify();
 You can install this package via composer using this command:
 
 ```bash
-composer require jameslkingsley/laravel-mentions
+composer require votong/laravel-mentions
 ```
 
 **If you're using Laravel 5.5 or greater this package will be auto-discovered, however if you're using anything lower than 5.5 you will need to register it the old way:**
@@ -61,14 +61,14 @@ Next, you must install the service provider in `config/app.php`:
 ```php
 'providers' => [
     ...
-    Kingsley\Mentions\MentionServiceProvider::class,
+    VoTong\Mentions\MentionServiceProvider::class,
 ];
 ```
 
 Now publish the migration, front-end assets and config:
 
 ```bash
-php artisan vendor:publish --provider="Kingsley\Mentions\MentionServiceProvider"
+php artisan vendor:publish --provider="VoTong\Mentions\MentionServiceProvider"
 ```
 
 After the migration has been published you can create the mentions table by running the migrations:
@@ -207,7 +207,7 @@ Now onto the back-end. Choose the model that you want to assign mentions to. In 
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Kingsley\Mentions\Traits\HasMentions;
+use VoTong\Mentions\Traits\HasMentions;
 
 class Comment extends Model
 {

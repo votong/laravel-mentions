@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingsley\Mentions\Exceptions;
+namespace VoTong\Mentions\Exceptions;
 
 use Exception;
 

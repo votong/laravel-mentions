@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Kingsley\Mentions\Traits\HasMentions;
+use VoTong\Mentions\Traits\HasMentions;
 
 class Comment extends Model
 {

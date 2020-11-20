@@ -1,10 +1,10 @@
 <?php
 
-namespace Kingsley\Mentions\Controllers;
+namespace VoTong\Mentions\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Kingsley\Mentions\Collections\ModelCollection;
+use VoTong\Mentions\Collections\ModelCollection;
 
 class MentionController extends Controller
 {

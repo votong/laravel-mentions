@@ -1,26 +1,26 @@
 {
-    "name": "jameslkingsley/laravel-mentions",
-    "description": "End-to-end mentions in Laravel 5 & 6.",
+    "name": "votong/laravel-mentions",
+    "description": "End-to-end mentions in Laravel 5, 6, 7 & 8.",
     "keywords": [
         "laravel",
         "mentions"
     ],
-    "homepage": "https://github.com/jameslkingsley/laravel-mentions",
+    "homepage": "https://github.com/votong/laravel-mentions",
     "license": "MIT",
     "authors": [
         {
-            "name": "James Kingsley",
-            "email": "jameslkingsley@outlook.com",
-            "homepage": "https://github.com/jameslkingsley",
+            "name": "Vo Tong",
+            "email": "votong175@gmail.com",
+            "homepage": "https://github.com/votong",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=7.2.0",
-        "illuminate/support": "^5.5|^6.0",
-        "illuminate/database": "^5.5|^6.0",
-        "illuminate/http": "^5.5|^6.0",
-        "illuminate/routing": "^5.5|^6.0"
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/database": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/http": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/routing": "^5.5|^6.0|^7.0|^8.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kingsley\\Mentions\\": "src/"
+            "VoTong\\Mentions\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kingsley\\Mentions\\Test\\": "tests/"
+            "VoTong\\Mentions\\Test\\": "tests/"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kingsley\\Mentions\\MentionServiceProvider"
+                "VoTong\\Mentions\\MentionServiceProvider"
             ]
         }
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kingsley\Mentions\Repositories;
+namespace VoTong\Mentions\Repositories;
 
 use Illuminate\Support\Collection;
-use Kingsley\Mentions\Models\Mention;
+use VoTong\Mentions\Models\Mention;
 use Illuminate\Database\Eloquent\Model;
 
 class MentionRepository

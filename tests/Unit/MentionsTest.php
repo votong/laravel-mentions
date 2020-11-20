@@ -1,14 +1,14 @@
 <?php
 
-namespace Kingsley\Mentions\Test\Unit;
+namespace VoTong\Mentions\Test\Unit;
 
 use Illuminate\Support\Facades\App;
-use Kingsley\Mentions\Test\TestCase;
+use VoTong\Mentions\Test\TestCase;
 use Illuminate\Support\Facades\Route;
-use Kingsley\Mentions\Models\Mention;
+use VoTong\Mentions\Models\Mention;
 use Illuminate\Support\Facades\Request;
-use Kingsley\Mentions\Test\TestCommentModel;
-use Kingsley\Mentions\Collections\MentionCollection;
+use VoTong\Mentions\Test\TestCommentModel;
+use VoTong\Mentions\Collections\MentionCollection;
 
 class MentionsTest extends TestCase
 {
@@ -150,7 +150,7 @@ class MentionsTest extends TestCase
     {
         $this->app['config']->set(
             'mentions.pools.users.resource',
-            'Kingsley\Mentions\Test\TestUserCollection'
+            'VoTong\Mentions\Test\TestUserCollection'
         );
 
         $request = Request::create('/api/mentions/?p=users&q=Ke', 'GET');
@@ -166,7 +166,7 @@ class MentionsTest extends TestCase
     {
         $this->app['config']->set(
             'mentions.pools.users.filter',
-            'Kingsley\Mentions\Test\TestUserFilter'
+            'VoTong\Mentions\Test\TestUserFilter'
         );
 
         $request = Request::create('/api/mentions/?p=users&q=Ke', 'GET');
