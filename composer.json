@@ -1,0 +1,51 @@
+{
+    "name": "jameslkingsley/laravel-mentions",
+    "description": "End-to-end mentions in Laravel 5 & 6.",
+    "keywords": [
+        "laravel",
+        "mentions"
+    ],
+    "homepage": "https://github.com/jameslkingsley/laravel-mentions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Kingsley",
+            "email": "jameslkingsley@outlook.com",
+            "homepage": "https://github.com/jameslkingsley",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "illuminate/support": "^5.5|^6.0",
+        "illuminate/database": "^5.5|^6.0",
+        "illuminate/http": "^5.5|^6.0",
+        "illuminate/routing": "^5.5|^6.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^0.9",
+        "phpunit/phpunit": "6.3|^7.0",
+        "orchestra/testbench": "3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kingsley\\Mentions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kingsley\\Mentions\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor\\bin\\phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kingsley\\Mentions\\MentionServiceProvider"
+            ]
+        }
+    }
+}
